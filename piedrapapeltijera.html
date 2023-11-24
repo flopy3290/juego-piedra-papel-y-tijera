@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel, tijera</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script src="js/codigo.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="neonText">Piedra, papel o tijera</h1>
+    </header>
+    <!-- En este div se crea la parte del juego -->
+    <main>
+        <div id="game">
+            <div class="choices">
+                <div class="button-container">
+                    <button id="rock"><img src="rock.png" alt="Piedra"></button>
+                </div>
+                <div class="button-container">
+                    <button id="paper"><img src="paper.png" alt="Papel"></button>
+                </div>
+                <div class="button-container">
+                    <button id="scissors"><img src="scissors.png" alt="Tijera"></button>
+                </div>
+            </div>
+
+            <!-- Muestra la elección de la computadora -->
+            <div id="computer-choice">
+                <h2 class="neonText">La computadora eligió: <span id="computer-choice-text"></span></h3>
+            </div>
+           
+            <!-- En este div se crea el resultado final -->
+            <div id="result">
+                <h2 class="neonText">Resultado: <span id="result-text"></span> </h2>
+            </div>
+
+    </main>
+</body>
+</html>
